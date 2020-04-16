@@ -2,3 +2,237 @@
   box-sizing: border-box;
 }
 
+.header {
+  height: 36px;
+  background-color: #444;
+  border-bottom: 1px solid #2d2d2d;
+  line-height: 1.6;
+  .header-inner {
+    height: 36px;
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      // font-family: 'Pacifico-Regular';
+      font-size: 21px;
+      font-weight: bold;
+      color: orange;
+    }
+    .header-menu {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      .item {
+        padding: 0 10px;
+        border-left: 1px solid rgba(255,255,255,.2);
+        height: 20px;
+      }
+    }
+  }
+}
+
+.wrapper {
+  display: block;
+  text-align: center;
+  background-color: #f2f2f2;
+  .title_menu {
+    margin: 0 auto;
+    width: 980px;
+    height: 300px;
+  }
+  .menu {
+    height: 48px;
+    width: 980px;
+    margin: 0 auto;
+    background: #FFF;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-item {
+      padding: 0 80px;
+      border-left: 1px solid rgba(0,0,0,.12);
+      height: 30px;
+      align-items: center;
+    }
+  }
+  .pankuzu {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 14px;
+    .pankuzu-inner {
+      display: flex;
+      .pankuzu-child {
+        float: left;
+        margin: 0 5px;
+      }
+    }
+  }
+  .wrapper-main {
+    display: flex;
+    width: 980px;
+    margin: 10px auto;
+    .side-bar {
+      height: 100%;
+      width: 220px;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+      border-radius: 2px;
+      overflow: hidden;
+      background-color: #FFF;
+      margin-bottom: 10px;
+      .sub-title {
+        width: 220px;
+        // background: url(/assets/img/spt_tips/spt_tips1576495998164.png) no-repeat -66px -499px;
+        background: #444;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .sub-content-menu {
+        width: 100%;
+        padding: 0 10px 0 10px;
+        position: relative;
+        background-color: #FFF;
+        border-bottom: 1px solid #e5e5e5;
+        display: block;
+        .game-item {
+          display: block;
+          border-bottom: 1px solid rgba(0,0,0,.12);
+          padding: 10px;
+          .game-icon {
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            background-color: #999;
+            border-radius: 10px;
+            margin: auto;
+          }
+          .game-title {
+            padding: 10px 0 0 10px;
+            position: relative;
+            font-weight: 700;
+            font-size: 14px;
+            color: #448acb;
+          }
+        }
+      }
+    }
+    .main-gacha {
+      height: 1000px;
+      width: 760px;
+      margin: 0 0 0 10px;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+      border-radius: 2px;
+      overflow: hidden;
+      background-color: #FFF;
+      margin-bottom: 10px;
+      background-size: 100% auto;
+      background-image: url("https://gamewith.akamaized.net/service/hd/images/b2577199c5a51e531b3e74fb26089c7f.png");
+      // background-image: url("https://blankcoin.com/img/cg/15_20/cg2017_etlin_04.jpg");
+      .main-title {
+        width: 760px;
+        background: #444;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .gacha-section {
+        display: block;
+        .gacha-title {
+          height: 50px;
+          width: 500px;
+          background: #444;
+          color: #fff;
+          font-size: 21px;
+          font-weight: bold;
+          padding: 8px;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          background-image: url("https://gamewith.akamaized.net/service/hd/images/a9a5739bbe97bfdcb312a073ad440051.png");
+          padding-left: 20px;
+          color: #FFF;
+          text-shadow: 2px 2px 0px rgba(34,25,24,1);
+        }
+        .gacha-anime {
+          margin-bottom: 15px;
+          .anime-image {
+            height: 415px;
+            width: 300px;
+            margin: auto;
+            background-size: 100% auto;
+            background-image: url("https://gamewith.s3.amazonaws.com/animation_gifs/65441dc021dfa933.gif");
+            padding: 10px 0;
+            margin-bottom: 15px;
+          }
+          .gacha-btn {
+            height: 72px;
+            width: 170px;
+            margin: auto;
+            background-size: 100% auto;
+            background-image: url("https://img.gamewith.jp/article_tools/granbluefantasy/gacha/graBTN.png");
+          }
+        }
+        .gacha-result {
+          display: block;
+          .result-title {
+            height: 50px;
+            width: 500px;
+            background: #444;
+            color: #fff;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 8px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-image: url("https://gamewith.akamaized.net/service/hd/images/a9a5739bbe97bfdcb312a073ad440051.png");
+            padding-left: 20px;
+            color: #FFF;
+            text-shadow: 2px 2px 0px rgba(34,25,24,1);
+          }
+          .gacha-result-list {
+            height: 50px;
+            width: 500px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 15px;
+          }
+          .result-box {
+            border: solid 1px #e0e0e0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            .first-child {
+              width: 60px;
+              text-align: center;
+              border-right: solid 1px #e0e0e0;
+            }
+            .second-child {
+              display: table-cell;
+              width: auto;
+              padding: 5px 10px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+c-box {
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #FFF;
+  margin-bottom: 10px;
+}
