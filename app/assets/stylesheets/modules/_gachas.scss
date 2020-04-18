@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     .logo {
-      // font-family: 'Pacifico-Regular';
+      font-family: 'Pacifico-Regular';
       font-size: 21px;
       font-weight: bold;
       color: orange;
@@ -88,7 +88,6 @@
       margin-bottom: 10px;
       .sub-title {
         width: 220px;
-        // background: url(/assets/img/spt_tips/spt_tips1576495998164.png) no-repeat -66px -499px;
         background: #444;
         color: #fff;
         font-size: 18px;
@@ -134,8 +133,7 @@
       background-color: #FFF;
       margin-bottom: 10px;
       background-size: 100% auto;
-      background-image: url("https://gamewith.akamaized.net/service/hd/images/b2577199c5a51e531b3e74fb26089c7f.png");
-      // background-image: url("https://blankcoin.com/img/cg/15_20/cg2017_etlin_04.jpg");
+      background-image: url(/assets/common/gacha-background.png);
       .main-title {
         width: 760px;
         background: #444;
@@ -157,82 +155,32 @@
           margin: auto;
           margin-top: 10px;
           margin-bottom: 10px;
-          background-image: url("https://gamewith.akamaized.net/service/hd/images/a9a5739bbe97bfdcb312a073ad440051.png");
+          background-image: url(/assets/common/gacha-title-bar.png);
           padding-left: 20px;
           color: #FFF;
           text-shadow: 2px 2px 0px rgba(34,25,24,1);
         }
-        .gacha-anime {
-          margin-bottom: 15px;
-          .anime-image {
-            height: 415px;
-            width: 300px;
-            margin: auto;
-            background-size: 100% auto;
-            background-image: url("https://gamewith.s3.amazonaws.com/animation_gifs/65441dc021dfa933.gif");
-            padding: 10px 0;
-            margin-bottom: 15px;
-          }
-          .gacha-btn {
-            height: 72px;
-            width: 170px;
-            margin: auto;
-            background-size: 100% auto;
-            background-image: url("https://img.gamewith.jp/article_tools/granbluefantasy/gacha/graBTN.png");
-          }
+        .gacha-result{
+          text-align: center;
         }
-        .gacha-result {
-          display: block;
-          .result-title {
-            height: 50px;
-            width: 500px;
-            background: #444;
-            color: #fff;
-            font-size: 21px;
-            font-weight: bold;
-            padding: 8px;
-            margin: auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background-image: url("https://gamewith.akamaized.net/service/hd/images/a9a5739bbe97bfdcb312a073ad440051.png");
-            padding-left: 20px;
-            color: #FFF;
-            text-shadow: 2px 2px 0px rgba(34,25,24,1);
-          }
-          .gacha-result-list {
-            height: 50px;
-            width: 500px;
-            margin: auto;
-            margin-top: 10px;
-            margin-bottom: 15px;
-          }
-          .result-box {
-            border: solid 1px #e0e0e0;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            .first-child {
-              width: 60px;
-              text-align: center;
-              border-right: solid 1px #e0e0e0;
-            }
-            .second-child {
-              display: table-cell;
-              width: auto;
-              padding: 5px 10px;
-              vertical-align: middle;
-            }
-          }
+        #gacha-btn{
+          height: 108px;
+          width: 250px;
+          margin: 10px auto 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          user-select: none;
+          background: url(/assets/common/gacha-btn.png);
+          background-size: contain, cover;
+          text-align:center;
+        }
+        #gacha-btn:hover{
+          opacity:0.9;
+        }
+        #gacha-btn.pressed{
+          margin-top: 15px;
         }
       }
     }
   }
-}
-
-c-box {
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
-  border-radius: 2px;
-  overflow: hidden;
-  background-color: #FFF;
-  margin-bottom: 10px;
 }
