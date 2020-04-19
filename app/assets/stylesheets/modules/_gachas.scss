@@ -45,7 +45,7 @@
     width: 980px;
     height: 300px;
   }
-  .menu {
+  .menu-list {
     height: 48px;
     width: 980px;
     margin: 0 auto;
@@ -59,6 +59,7 @@
       border-left: 1px solid rgba(0,0,0,.12);
       height: 30px;
       align-items: center;
+      cursor:pointer;
     }
   }
   .pankuzu {
@@ -112,6 +113,7 @@
             background-color: #999;
             border-radius: 10px;
             margin: auto;
+            cursor:pointer;
           }
           .game-title {
             padding: 10px 0 0 10px;
@@ -119,12 +121,13 @@
             font-weight: 700;
             font-size: 14px;
             color: #448acb;
+            cursor:pointer;
           }
         }
       }
     }
     .main-gacha {
-      height: 1000px;
+      height: 100%;
       width: 760px;
       margin: 0 0 0 10px;
       box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
@@ -145,7 +148,7 @@
       .gacha-section {
         display: block;
         .gacha-title {
-          height: 50px;
+          height: 45px;
           width: 500px;
           background: #444;
           color: #fff;
@@ -159,13 +162,28 @@
           padding-left: 20px;
           color: #FFF;
           text-shadow: 2px 2px 0px rgba(34,25,24,1);
+          cursor:pointer;
+        }
+        #show-rality{
+          font-weight: bold;
+          height: 25px;
+          margin: auto;
+          margin-top: 10px;
+        }
+        #description{
+          font-weight: bold;
+          text-align: center;
+          height: 25px;
+          margin: auto;
+          margin-bottom: 10px;
+          font-size: 21px;
         }
         .gacha-result{
           text-align: center;
         }
         #gacha-btn{
-          height: 108px;
-          width: 250px;
+          height: 86px;
+          width: 200px;
           margin: 10px auto 10px;
           border-radius: 10px;
           cursor: pointer;
@@ -180,6 +198,33 @@
         #gacha-btn.pressed{
           margin-top: 15px;
         }
+      }
+      .top-btn {
+        display:  inline-block;
+        color: #fff;
+        text-decoration:  none;
+        background-color: #2196F3;
+        border-radius: 5px;
+        position:  relative;
+        height: 50px;
+        width: 50px;
+        cursor:pointer;
+        margin-top: 500px;
+      }
+      .top-btn::before {
+        content:  '';
+        width: 20px;
+        height: 20px;
+        display:  block;
+        border-top: solid 2px;
+        border-right: solid 2px;
+        transform: rotate(-45deg);
+        position:  absolute;
+        top: 10px;
+        bottom:  0;
+        left:  0;
+        right:  0;
+        margin:  auto;
       }
     }
   }
