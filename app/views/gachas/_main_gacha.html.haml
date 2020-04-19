@@ -1,8 +1,13 @@
 .main-gacha
   .main-title ガチャシミュレーター
   .gacha-section
-    .gacha-title ガチャを回す
+    .gacha-title{onclick: "scrollToGames()"} ガチャを回す
+    .rality
+      %h1#show-rality
+      .desc
+      %p#description
     .gacha-anime
       .result-image
       %img#gacha-result{alt: "", heigth: "450", src: "assets/games/grablu/gacha.png", width: "350"}/
       #gacha-btn
+  .top-btn{onclick: "scrollToTop()"}
