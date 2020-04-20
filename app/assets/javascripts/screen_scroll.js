@@ -7,7 +7,7 @@ function scrollToGames(){
 }
 
 function scrollToGames2(){
-  scrollTo(0, 1660);
+  scrollTo(0, 1630);
 }
 
 // function scrollToGames(){
