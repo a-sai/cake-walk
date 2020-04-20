@@ -69,7 +69,15 @@
     font-size: 14px;
     .pankuzu-inner {
       display: flex;
-      .pankuzu-child {
+      .pankuzu-child1 {
+        float: left;
+        margin: 0 5px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #448acb;
+        cursor: pointer;
+      }
+      .pankuzu-child2 {
         float: left;
         margin: 0 5px;
       }
@@ -196,6 +204,46 @@
           opacity:0.9;
         }
         #gacha-btn.pressed{
+          margin-top: 15px;
+        }
+      }
+      .ssr-gacha-section {
+        display: block;
+        .ssr-gacha-title {
+          height: 45px;
+          width: 500px;
+          background: #444;
+          color: #fff;
+          font-size: 21px;
+          font-weight: bold;
+          padding: 8px;
+          margin: auto;
+          margin-top: 160px;
+          margin-bottom: 10px;
+          background-image: url(/assets/common/gacha-title-bar.png);
+          padding-left: 20px;
+          color: #FFF;
+          text-shadow: 2px 2px 0px rgba(34,25,24,1);
+          cursor:pointer;
+        }
+        .gacha-result2{
+          text-align: center;
+        }
+        #gacha-btn2{
+          height: 86px;
+          width: 200px;
+          margin: 10px auto 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          user-select: none;
+          background: url(/assets/common/gacha-btn.png);
+          background-size: contain, cover;
+          text-align:center;
+        }
+        #gacha-btn2:hover{
+          opacity:0.9;
+        }
+        #gacha-btn2.pressed{
           margin-top: 15px;
         }
       }

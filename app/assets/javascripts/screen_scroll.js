@@ -6,6 +6,10 @@ function scrollToGames(){
   scrollTo(0, 420);
 }
 
+function scrollToGames2(){
+  scrollTo(0, 1245);
+}
+
 // function scrollToGames(){
 //   var menu_list = $(".menu-list > li");
 //   var body = $("body");
