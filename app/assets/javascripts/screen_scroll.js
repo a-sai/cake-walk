@@ -3,11 +3,11 @@ function scrollToTop() {
 }
 
 function scrollToGames(){
-  scrollTo(0, 420);
+  scrollTo(0, 780);
 }
 
 function scrollToGames2(){
-  scrollTo(0, 1245);
+  scrollTo(0, 1660);
 }
 
 // function scrollToGames(){
