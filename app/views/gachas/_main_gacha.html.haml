@@ -2,18 +2,20 @@
   .main-title ガチャシミュレーター
   .gacha-section
     .gacha-title{onclick: "scrollToGames()"} ガチャを回す
-    .rality
-      %h1#show-rality
-      .desc
-      %p#description
-    .gacha-anime
-      .result-image
-      %img#gacha-result{alt: "", heigth: "450", src: "assets/games/grablu/gacha.png", width: "350"}/
-      #gacha-btn
+    .gacha-box1
+      .rality
+        %h1#show-rality
+        .desc
+        %p#description
+      .gacha-image
+        .result-image
+          = image_tag asset_path("games/grablu/gacha.png"), id: "gacha-result", alt: ""
+        .gacha-btn#gacha-btn
   .ssr-gacha-section
     .ssr-gacha-title{onclick: "scrollToGames2()"} SSR確定ガチャを回す
-    .ssr-gacha-anime
-      .ssr-result-image
-      %img#gacha-result2{alt: "", heigth: "450", src: "assets/games/grablu/gacha-ssr.png", width: "350"}/
-      #gacha-btn2
-  .top-btn{onclick: "scrollToTop()"}
+    .gacha-box2
+      .ssr-gacha-image
+        .result-image
+          = image_tag asset_path("games/grablu/gacha-ssr.png"), id: "gacha-result2", alt: ""
+        #gacha-btn2
+  -# .top-btn{onclick: "scrollToTop()"}

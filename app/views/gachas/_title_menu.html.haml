@@ -1,28 +1,65 @@
-.title_menu{style: "background-image: url(/assets/games/grablu/grablu-title2.png);"}
+.title_menu
+  = image_tag asset_path("games/top-image/top1.png"), id: "top-image"
 %ul.menu-list
-  %li.menu-item{onclick: "scrollToGames()"}
-    ゲーム選択
-  %li.menu-item{onclick: "scrollToGames()"}
-    %i.far.fa-gem
-    ガチャガチャ
-    %i.fas.fa-gem
-  %li.menu-item{onclick: "scrollToGames2()"}
-    %i.far.fa-gem
-    %i.fas.fa-gem
-    %i.far.fa-gem
-    SSR確定ガチャ
-    %i.far.fa-gem
-    %i.fas.fa-gem
-    %i.far.fa-gem
+  %li.menu-item#button
+  .menu-item#gacha1{onclick: "scrollToGames()"}
+    %a
+      %i.far.fa-gem
+      ガチャガチャ
+      %i.far.fa-gem
+  .menu-item#gacha2{onclick: "scrollToGames2()"}
+    %a
+      %i.fas.fa-gem
+      %i.fas.fa-gem
+      %i.fas.fa-gem
+      SSR確定ガチャ
+      %i.fas.fa-gem
+      %i.fas.fa-gem
+      %i.fas.fa-gem
 %ul.menu-list2
-  %li.menu-item2
-    ↑ ゲーム一覧へ移動します
-  %li.menu-item2
-    ↑ 遊びたいガチャを選んでください ↑
-.title_menu2{style: "background-image: url(/assets/games/shadowverse/shadowverse-title.png);"} 
-.pankuzu
-  .pankuzu-inner
-    .pankuzu-child1{onclick: "scrollToTop()"}
-      CakeWalk
-    .pankuzu-child2
-      > ガチャガチャ
+  %li.menu-item2#menu-item1
+    ↑ ゲーム一覧を表示します
+  %li.menu-item2#menu-item2
+.game-list
+  .reflection#change-top{style: "background-image: url(/assets/games/top-image/top2.png);"}
+  %ul.content-menu
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/grablu/grablu-icon.png"), class: "icon", id: "grablu"
+      .game-title グランブルーファンタジー
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/shadowverse/shadowverse-icon.png"), class: "icon", id: "shadowverse"
+      .game-title シャドウバース
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/priconne/priconne-icon.png"), class: "icon", id: "priconne"
+      .game-title プリンセスコネクト! Re:Dive
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/fankill-icon.png"), class: "icon", id: "fankill"
+      .game-title ファントムオブキル
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/fgo-icon.png"), class: "icon", id: "fgo"
+      .game-title Fate/Grand Order
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/pazdra-icon.png"), class: "icon", id: "pazdra"
+      .game-title パズル＆ドラゴンズ
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/monst-icon.png"), class: "icon", id: "monst"
+      .game-title モンスターストライク
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/dqwalk-icon.png"), class: "icon", id: "dqwalk"
+      .game-title ドラクエウォーク
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/yugioh-icon.png"), class: "icon", id: "yugioh"
+      .game-title 遊戯王 デュエルリンクス
+    %li.game-item
+      .game-icon
+        = image_tag asset_path("games/icons/soa-icon.png"), class: "icon", id: "soa"
+      .game-title STAR OCEAN anamnesis

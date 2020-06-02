@@ -2,6 +2,79 @@
   box-sizing: border-box;
 }
 
+//繰り返し使用する要素
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  border-radius: 10px;
+}
+
+.result-image{
+  height: 450px;
+  width: 350px;
+  margin: auto;
+}
+
+#button {
+  width: 150px;
+  height:50px;
+  border-radius:180px;
+  position:relative;
+  left:calc(3%);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  cursor:pointer;
+  line-height:12px;
+}
+
+#button:before {
+  content:'';
+  z-index:1;
+  position:absolute;
+  display:block;
+  width:80%;
+  height:70%;
+  top:15%;
+  left:10%;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(15px);
+  opacity:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#button:hover:before {
+  opacity:1;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#button:after {
+  content:'CLICK ME!';
+  text-align:center;
+  line-height:40px;
+  font-size:18px;
+  color:rgba(235,235,235,1);
+  font-weight:bold;
+  z-index:5;
+  position:absolute;
+  display:block;
+  border-radius:180px;
+  width:92%;
+  height:80%;
+  top:10%;
+  left:4%;  
+  background-color:rgb(19, 20, 22);
+}
+
+#top-image {
+  transition: all 500ms 0s ease;
+  object-fit: cover;
+}
+
+//ヘッダー
 .header {
   height: 36px;
   background-color: #444;
@@ -20,6 +93,7 @@
       font-size: 21px;
       font-weight: bold;
       color: orange;
+      cursor:pointer;
     }
     .header-menu {
       color: #fff;
@@ -31,11 +105,13 @@
         padding: 0 10px;
         border-left: 1px solid rgba(255,255,255,.2);
         height: 20px;
+        cursor:pointer;
       }
     }
   }
 }
 
+//本文
 .wrapper {
   display: block;
   text-align: center;
@@ -43,7 +119,7 @@
   .title_menu {
     margin: 0 auto;
     width: 980px;
-    height: 320px;
+    height: 300px;
     background: no-repeat center center;
     background-size: cover;
   }
@@ -53,6 +129,7 @@
     margin: 0 auto;
     background: #FFF;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +139,36 @@
       height: 30px;
       align-items: center;
       cursor:pointer;
+      &:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s;
+      }
+    }
+    .p1 {
+      text-align: center;
+    }
+    .p2 {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+    .p1:nth-child(2) a {
+      color: #FF8C00;
+      background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .p2:nth-child(3) a {
+      color: #FF8C00;
+      background: -webkit-linear-gradient(0deg, #FF0080, #E0E041, #41E05C, #40E0D0, #4B00E0);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   .menu-list2 {
@@ -70,22 +177,111 @@
     margin: 0 auto;
     background: #FFF;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     .menu-item2 {
       padding: 0 80px;
-      border-left: 1px solid rgba(0,0,0,.12);
       height: 30px;
       align-items: center;
     }
+    .pyonpyon {
+      animation: pyon .3s ease infinite alternate;
+    }
+    @keyframes pyon {
+      0% {transform: translateY(0px);}
+      100% {transform: translateY(-10px);}
+    }
   }
-  .title_menu2 {
+  //ゲーム一覧表示
+  .game-list {
     margin: 0 auto;
     width: 980px;
-    height: 320px;
-    background: no-repeat center center;
-    background-size: cover;
+    height: 340px;
+    margin-bottom: 20px;
+    .reflection {
+      width: 300px;
+      height: 150px;
+      position: relative;
+      overflow: hidden;
+      background-color: #666;
+    }
+    .reflection::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 100%;
+      position: absolute;
+      top: -180px;
+      left: 0;
+      background-color: #FFF;
+      opacity: 0;
+      transform: rotate(45deg);
+      animation: reflect 3s ease-in-out infinite;
+      -webkit-transform: rotate(45deg);
+      -webkit-animation: reflect 3s ease-in-out infinite;
+    }
+    @keyframes reflect {
+      0% { transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { transform: scale(50) rotate(45deg); opacity: 0; }
+    }
+    @-webkit-keyframes reflect {
+      0% { transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { transform: scale(50) rotate(45deg); opacity: 0; }
+    }
+    #change-top {
+      margin: 0 auto;
+      width: 980px;
+      height: 340px;
+      background: no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 432px;
+      transition: all 500ms 0s ease;
+    }
+    #change-top.off {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .content-menu {
+      width: 100%;
+      padding: 0 10px 0 10px;
+      background-image: url(/assets/common/gacha-background.png);
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      flex-wrap: wrap;
+      .game-item {
+        display: block;
+        padding: 10px;
+        width: 20%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        .game-icon {
+          background-size: cover;
+          height: 100px;
+          width: 100px;
+          background-color: #999;
+          border-radius: 10px;
+          margin: auto;
+          cursor:pointer;
+          &:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s;
+          }
+        }
+        .game-title {
+          padding: 10px 0 0 10px;
+          font-weight: 700;
+          font-size: 13px;
+          color: #448acb;
+          cursor:pointer;
+        }
+      }
+    }
   }
   .pankuzu {
     width: 980px;
@@ -112,6 +308,7 @@
     display: flex;
     width: 980px;
     margin: 10px auto;
+    //ゲーム一覧
     .side-bar {
       height: 100%;
       width: 220px;
@@ -159,8 +356,9 @@
         }
       }
     }
+    //ガチャシミュレーター
     .main-gacha {
-      height: 100%;
+      height: 1605px;
       width: 760px;
       margin: 0 0 0 10px;
       box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
@@ -211,10 +409,7 @@
           margin-bottom: 10px;
           font-size: 21px;
         }
-        .gacha-result{
-          text-align: center;
-        }
-        #gacha-btn{
+        .gacha-btn{
           height: 86px;
           width: 200px;
           margin: 10px auto 10px;
@@ -225,10 +420,10 @@
           background-size: contain, cover;
           text-align:center;
         }
-        #gacha-btn:hover{
+        .gacha-btn:hover{
           opacity:0.9;
         }
-        #gacha-btn.pressed{
+        .gacha-btn.pressed{
           margin-top: 15px;
         }
       }
@@ -282,7 +477,6 @@
         height: 50px;
         width: 50px;
         cursor:pointer;
-        margin-top: 500px;
       }
       .top-btn::before {
         content:  '';
