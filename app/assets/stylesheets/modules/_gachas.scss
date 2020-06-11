@@ -6,6 +6,7 @@
 img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .icon {
@@ -395,13 +396,13 @@ img {
           text-shadow: 2px 2px 0px rgba(34,25,24,1);
           cursor:pointer;
         }
-        #show-rality{
+        .rality{
           font-weight: bold;
           height: 25px;
           margin: auto;
           margin-top: 10px;
         }
-        #description{
+        .description{
           font-weight: bold;
           text-align: center;
           height: 25px;
