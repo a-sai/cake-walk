@@ -58,7 +58,7 @@ $(document).on('turbolinks:load', function() {
     const monst = document.getElementById('monst');
     const dqwalk = document.getElementById('dqwalk');
     const yugioh = document.getElementById('yugioh');
-    const soa = document.getElementById('soa');
+    const feh = document.getElementById('feh');
 
     $(function(){
       $(Image).animate({
@@ -119,8 +119,8 @@ $(document).on('turbolinks:load', function() {
       document.getElementById(item2).classList.add(pyon);
     });
 
-    soa.addEventListener('click',()=>{
-      document.getElementById(Image).src='assets/games/top-image/soa-title.png';
+    feh.addEventListener('click',()=>{
+      document.getElementById(Image).src='assets/games/top-image/feh-title.png';
       document.getElementById(item2).innerText = "↑ 遊びたいガチャを選ぼう！ ↑";
       document.getElementById(item2).classList.add(pyon);
     });

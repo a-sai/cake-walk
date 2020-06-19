@@ -3,20 +3,17 @@ $(document).on('turbolinks:load', function(){
 
     'use strict';
     {
-      const btn = document.getElementById('gacha-btn');
-      if (btn == null){
-        return false;
-      }
-
-      btn.addEventListener('mousedown',()=>{
+      $(document).on('mousedown', '#gacha-btn', function(){
+        var btn = document.getElementById('gacha-btn');
         btn.classList.add('pressed')
       });
 
-      btn.addEventListener('mouseup',()=>{
+      $(document).on('mouseup', '#gacha-btn', function(){
+        var btn = document.getElementById('gacha-btn');
         btn.classList.remove('pressed')
       });
 
-      btn.addEventListener('click',()=>{
+      $(document).on('click', '#gacha-btn', function(){
 
         var h1 = document.getElementById("show-rality");
         if (h1 == null){
