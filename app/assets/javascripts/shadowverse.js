@@ -62,21 +62,21 @@ $(document).on('turbolinks:load', function(){
         switch(gr){
   
           case 4:
-          const results1 = ["assets/games/shadowverse/legend/l_f_1.png","assets/games/shadowverse/legend/l_f_2.png","assets/games/shadowverse/legend/l_f_3.png",
+          const results4 = ["assets/games/shadowverse/legend/l_f_1.png","assets/games/shadowverse/legend/l_f_2.png","assets/games/shadowverse/legend/l_f_3.png",
                             "assets/games/shadowverse/legend/l_f_4.png", "assets/games/shadowverse/legend/l_f_5.png","assets/games/shadowverse/legend/l_f_6.png",
                             "assets/games/shadowverse/legend/l_f_7.png","assets/games/shadowverse/legend/l_f_8.png","assets/games/shadowverse/legend/l_nf_1.png",
                             "assets/games/shadowverse/legend/l_nf_2.png","assets/games/shadowverse/legend/l_nf_3.png","assets/games/shadowverse/legend/l_nf_4.png",
                             "assets/games/shadowverse/legend/l_nf_5.png","assets/games/shadowverse/legend/l_nf_6.png","assets/games/shadowverse/legend/l_nf_7.png",
                             "assets/games/shadowverse/legend/l_nf_8.png"
                           ];
-            const n1 = Math.floor(Math.random()*results1.length);
-            document.getElementById('gacha-result').src = results1[n1];
+            const n4 = Math.floor(Math.random()*results4.length);
+            document.getElementById('gacha-result').src = results4[n4];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "⭐️🌈レジェンドレア🌈⭐️";
           break;
   
           case 3:
-          const results2 = ["assets/games/shadowverse/gold/g_f_1.png","assets/games/shadowverse/gold/g_f_2.png","assets/games/shadowverse/gold/g_f_3.png",
+          const results3 = ["assets/games/shadowverse/gold/g_f_1.png","assets/games/shadowverse/gold/g_f_2.png","assets/games/shadowverse/gold/g_f_3.png",
                             "assets/games/shadowverse/gold/g_f_4.png","assets/games/shadowverse/gold/g_f_5.png","assets/games/shadowverse/gold/g_f_6.png",
                             "assets/games/shadowverse/gold/g_f_7.png","assets/games/shadowverse/gold/g_f_8.png","assets/games/shadowverse/gold/g_s_1.png",
                             "assets/games/shadowverse/gold/g_s_2.png","assets/games/shadowverse/gold/g_s_3.png","assets/games/shadowverse/gold/g_s_4.png",
@@ -84,14 +84,14 @@ $(document).on('turbolinks:load', function(){
                             "assets/games/shadowverse/gold/g_s_8.png","assets/games/shadowverse/gold/g_a_1.png","assets/games/shadowverse/gold/g_a_2.png",
                             "assets/games/shadowverse/gold/g_a_3.png"
                           ];
-            const n2 = Math.floor(Math.random()*results2.length);
-            document.getElementById('gacha-result').src = results2[n2];
+            const n3 = Math.floor(Math.random()*results3.length);
+            document.getElementById('gacha-result').src = results3[n3];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "ゴールドレア!!!";
           break;
   
           case 2:
-          const results3 = ["assets/games/shadowverse/silver/s_f_1.png","assets/games/shadowverse/silver/s_f_2.png","assets/games/shadowverse/silver/s_f_3.png",
+          const results2 = ["assets/games/shadowverse/silver/s_f_1.png","assets/games/shadowverse/silver/s_f_2.png","assets/games/shadowverse/silver/s_f_3.png",
                             "assets/games/shadowverse/silver/s_f_4.png","assets/games/shadowverse/silver/s_f_5.png","assets/games/shadowverse/silver/s_f_6.png",
                             "assets/games/shadowverse/silver/s_f_7.png","assets/games/shadowverse/silver/s_f_8.png","assets/games/shadowverse/silver/s_s_1.png",
                             "assets/games/shadowverse/silver/s_s_2.png","assets/games/shadowverse/silver/s_s_3.png","assets/games/shadowverse/silver/s_s_4.png",
@@ -100,14 +100,14 @@ $(document).on('turbolinks:load', function(){
                             "assets/games/shadowverse/silver/s_a_3.png","assets/games/shadowverse/silver/s_a_4.png","assets/games/shadowverse/silver/s_a_5.png",
                             "assets/games/shadowverse/silver/s_a_6.png","assets/games/shadowverse/silver/s_a_7.png","assets/games/shadowverse/silver/s_a_8.png"
                           ];
-            const n3 = Math.floor(Math.random()*results3.length);
-            document.getElementById('gacha-result').src = results3[n3];
+            const n2 = Math.floor(Math.random()*results2.length);
+            document.getElementById('gacha-result').src = results2[n2];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "シルバーレア!!";
           break;
   
           default:
-          const results4 = ["assets/games/shadowverse/bronze/b_f_1.png","assets/games/shadowverse/bronze/b_f_2.png","assets/games/shadowverse/bronze/b_f_3.png",
+          const results1 = ["assets/games/shadowverse/bronze/b_f_1.png","assets/games/shadowverse/bronze/b_f_2.png","assets/games/shadowverse/bronze/b_f_3.png",
                             "assets/games/shadowverse/bronze/b_f_4.png","assets/games/shadowverse/bronze/b_f_5.png","assets/games/shadowverse/bronze/b_f_6.png",
                             "assets/games/shadowverse/bronze/b_f_7.png","assets/games/shadowverse/bronze/b_f_8.png","assets/games/shadowverse/bronze/b_s_1.png",
                             "assets/games/shadowverse/bronze/b_s_2.png","assets/games/shadowverse/bronze/b_s_3.png","assets/games/shadowverse/bronze/b_s_4.png",
@@ -115,14 +115,13 @@ $(document).on('turbolinks:load', function(){
                             "assets/games/shadowverse/bronze/b_s_8.png","assets/games/shadowverse/bronze/b_a_1.png","assets/games/shadowverse/bronze/b_a_2.png",
                             "assets/games/shadowverse/bronze/b_a_3.png"
                           ];
-            const n4 = Math.floor(Math.random()*results4.length);
-            document.getElementById('gacha-result').src = results4[n4];
+            const n1 = Math.floor(Math.random()*results1.length);
+            document.getElementById('gacha-result').src = results1[n1];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "ブロンズレア!";
           break;
         };
         const gachaResult = document.getElementById('gacha-result').src;
-        // console.log(gachaResult);
         switch (gachaResult) {
           case "http://localhost:3000/assets/games/shadowverse/legend/l_f_1.png":
           var h1 = document.getElementById("show-description");

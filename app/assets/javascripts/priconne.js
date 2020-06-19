@@ -50,10 +50,8 @@ $(document).on('turbolinks:load', function(){
         const n = Math.random();
 
         if (n < 0.1){
-          var gr = 4;
-        }else if (n < 0.2){
           var gr = 3;
-        }else if (n < 0.6){
+        }else if (n < 0.3){
           var gr = 2;
         }else{
           var gr = 1;
@@ -62,15 +60,15 @@ $(document).on('turbolinks:load', function(){
         switch(gr){
 
           case 3:
-          const results1 = ["assets/games/priconne/ssr/1.png","assets/games/priconne/ssr/2.png","assets/games/priconne/ssr/3.png",
+          const results3 = ["assets/games/priconne/ssr/1.png","assets/games/priconne/ssr/2.png","assets/games/priconne/ssr/3.png",
                             "assets/games/priconne/ssr/4.png","assets/games/priconne/ssr/5.png","assets/games/priconne/ssr/6.png",
                             "assets/games/priconne/ssr/7.png","assets/games/priconne/ssr/8.png","assets/games/priconne/ssr/9.png",
                             "assets/games/priconne/ssr/10.png","assets/games/priconne/ssr/11.png","assets/games/priconne/ssr/12.png",
                             "assets/games/priconne/ssr/13.png","assets/games/priconne/ssr/14.png","assets/games/priconne/ssr/15.png",
                             "assets/games/priconne/ssr/16.png"
                           ];
-            const n1 = Math.floor(Math.random()*results1.length);
-            document.getElementById('gacha-result').src = results1[n1];
+            const n3 = Math.floor(Math.random()*results3.length);
+            document.getElementById('gacha-result').src = results3[n3];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "🌈⭐️⭐️⭐️🌈";
           break;
@@ -88,13 +86,13 @@ $(document).on('turbolinks:load', function(){
           break;
 
           default :
-          const results3 = ["assets/games/priconne/r/1.png","assets/games/priconne/r/2.png","assets/games/priconne/r/3.png",
+          const results1 = ["assets/games/priconne/r/1.png","assets/games/priconne/r/2.png","assets/games/priconne/r/3.png",
                             "assets/games/priconne/r/4.png","assets/games/priconne/r/5.png","assets/games/priconne/r/6.png",
                             "assets/games/priconne/r/7.png","assets/games/priconne/r/8.png","assets/games/priconne/r/9.png",
                             "assets/games/priconne/r/10.png"
                           ];
-            const n3 = Math.floor(Math.random()*results3.length);
-            document.getElementById('gacha-result').src = results3[n3];
+            const n1 = Math.floor(Math.random()*results1.length);
+            document.getElementById('gacha-result').src = results1[n1];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "⭐️";
           break;

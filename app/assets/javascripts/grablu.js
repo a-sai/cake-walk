@@ -62,50 +62,50 @@ $(document).on('turbolinks:load', function(){
         switch(gr){
 
           case 4:
-          const results1 = ["assets/games/grablu/summon/1.png","assets/games/grablu/summon/2.png","assets/games/grablu/summon/3.png",
+          const results4 = ["assets/games/grablu/summon/1.png","assets/games/grablu/summon/2.png","assets/games/grablu/summon/3.png",
                             "assets/games/grablu/summon/4.png","assets/games/grablu/summon/5.png","assets/games/grablu/summon/6.png",
                             "assets/games/grablu/summon/7.png","assets/games/grablu/summon/8.png","assets/games/grablu/summon/9.png",
                             "assets/games/grablu/summon/10.png","assets/games/grablu/summon/11.png","assets/games/grablu/summon/12.png",
                             "assets/games/grablu/summon/13.png"
                           ];
-            const n1 = Math.floor(Math.random()*results1.length);
-            document.getElementById('gacha-result').src = results1[n1];
+            const n4 = Math.floor(Math.random()*results4.length);
+            document.getElementById('gacha-result').src = results4[n4];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "⭐️🌈SSR召喚石🌈⭐️";
           break;
 
           case 3:
-          const results2 = ["assets/games/grablu/ssr/1.png","assets/games/grablu/ssr/2.png","assets/games/grablu/ssr/3.png",
+          const results3 = ["assets/games/grablu/ssr/1.png","assets/games/grablu/ssr/2.png","assets/games/grablu/ssr/3.png",
                             "assets/games/grablu/ssr/4.png", "assets/games/grablu/ssr/5.png","assets/games/grablu/ssr/6.png",
                             "assets/games/grablu/ssr/7.png","assets/games/grablu/ssr/8.png","assets/games/grablu/ssr/9.png",
                             "assets/games/grablu/ssr/10.png","assets/games/grablu/ssr/11.png","assets/games/grablu/ssr/12.png"
                           ];
-            const n2 = Math.floor(Math.random()*results2.length);
-            document.getElementById('gacha-result').src = results2[n2];
+            const n3 = Math.floor(Math.random()*results3.length);
+            document.getElementById('gacha-result').src = results3[n3];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "⭐️🌈SSR🌈⭐️";
           break;
 
           case 2:
-          const results3 = ["assets/games/grablu/sr/1.png","assets/games/grablu/sr/2.png","assets/games/grablu/sr/3.png",
+          const results2 = ["assets/games/grablu/sr/1.png","assets/games/grablu/sr/2.png","assets/games/grablu/sr/3.png",
                             "assets/games/grablu/sr/4.png","assets/games/grablu/sr/5.png","assets/games/grablu/sr/6.png",
                             "assets/games/grablu/sr/7.png","assets/games/grablu/sr/8.png","assets/games/grablu/sr/9.png",
                             "assets/games/grablu/sr/10.png"
                           ];
-            const n3 = Math.floor(Math.random()*results3.length);
-            document.getElementById('gacha-result').src = results3[n3];
+            const n2 = Math.floor(Math.random()*results2.length);
+            document.getElementById('gacha-result').src = results2[n2];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "SR!!";
           break;
 
           default:
-          const results4 = ["assets/games/grablu/r/1.png","assets/games/grablu/r/2.png","assets/games/grablu/r/3.png",
+          const results1 = ["assets/games/grablu/r/1.png","assets/games/grablu/r/2.png","assets/games/grablu/r/3.png",
                             "assets/games/grablu/r/4.png","assets/games/grablu/r/5.png","assets/games/grablu/r/6.png",
                             "assets/games/grablu/r/7.png","assets/games/grablu/r/8.png","assets/games/grablu/r/9.png",
                             "assets/games/grablu/r/10.png"
                           ];
-            const n4 = Math.floor(Math.random()*results4.length);
-            document.getElementById('gacha-result').src = results4[n4];
+            const n1 = Math.floor(Math.random()*results1.length);
+            document.getElementById('gacha-result').src = results1[n1];
             var h1 = document.getElementById("show-rality");
             h1.textContent = "R!";
           break;
@@ -142,7 +142,7 @@ $(document).on('turbolinks:load', function(){
           break;
           case "http://localhost:3000/assets/games/grablu/summon/8.png":
           var h1 = document.getElementById("show-description");
-          h1.textContent = "ミカエル	";
+          h1.textContent = "ミカエル";
           break;
           case "http://localhost:3000/assets/games/grablu/summon/9.png":
           var h1 = document.getElementById("show-description");
