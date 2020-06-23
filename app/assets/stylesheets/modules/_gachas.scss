@@ -447,10 +447,21 @@ img {
           text-shadow: 2px 2px 0px rgba(34,25,24,1);
           cursor:pointer;
         }
-        .gacha-result2{
-          text-align: center;
+        .rality{
+          font-weight: bold;
+          height: 25px;
+          margin: auto;
+          margin-top: 10px;
         }
-        #gacha-btn2{
+        .description{
+          font-weight: bold;
+          text-align: center;
+          height: 25px;
+          margin: auto;
+          margin-bottom: 10px;
+          font-size: 21px;
+        }
+        .gacha-btn2{
           height: 86px;
           width: 200px;
           margin: 10px auto 10px;
@@ -461,10 +472,10 @@ img {
           background-size: contain, cover;
           text-align:center;
         }
-        #gacha-btn2:hover{
+        .gacha-btn2:hover{
           opacity:0.9;
         }
-        #gacha-btn2.pressed{
+        .gacha-btn2.pressed{
           margin-top: 15px;
         }
       }
